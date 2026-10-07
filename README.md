@@ -1,24 +1,21 @@
-# Fake Virus Prank Starter Pack
+# ByteShield — Harmless Prank Arcade
 
-This project is a harmless, clearly fake "virus prank" starter pack designed for satire, jokes, or demos. It contains no real malware, no destructive behavior, and no actual system compromise.
+A collection of clearly labeled, interactive **fake-virus-style visual gags** for demos and lighthearted jokes. This is not malware, antivirus software, or a system prank tool: every effect is drawn inside the webpage and stays there.
 
-## Safety notice
-
-- This is a joke-only project.
-- It does not execute harmful code.
-- It does not modify files, install spyware, or alter system settings.
-- It is intended for fictional or comedic demonstrations only.
-
-## Included demo
-
-- `index.html` — a fake desktop alert UI that simulates a warning popup
-- `style.css` — styling to make the fake scan look convincing
-- `script.js` — animated progress, fake warning text, and prank interactions
+> **SIMULATION ONLY.** The programs do not scan devices, read or encrypt files, execute commands, alter settings, make network requests, open pop-up windows, lock screens, or persist after the page closes. Each simulation is opt-in and has an immediate **Stop & reveal** button.
 
 ## Run locally
 
-Open `index.html` in a browser.
+Open `index.html` in a modern browser. There is no build step, package installation, server, or account required. Google Fonts are optional; system font fallbacks are included.
 
-## Notes
+## The pretend program pack
 
-This project intentionally uses dramatic wording and simulated popups, but it is not a real virus or malware. All content is designed to be clearly fake and harmless.
+The arcade contains six page-contained simulations: **Oops! Something silly** (a playful fake alert); **Definitely not updating** (a progress animation); **Hollywood hacker** (prewritten technobabble, with no commands); **Compliment storm** (messages inside the page, not pop-up windows); **Very pretend files** (a fake progress meter, with nothing locked or changed); and **Coffee.exe needs coffee** (a friendly fictional system notice). The original fake quick-scan dashboard remains below the arcade, with pause/resume, fictional findings, fake resolution, activity log, reset, and the reveal dialog.
+
+These are examples of familiar computer-prank *styles*, not actual viruses or a comprehensive inventory of malware. They're intentionally built to be transparent, easy to stop, and non-disruptive. Don't use a joke to make someone believe their real files or device are compromised; keep the visible simulation notice in place, especially when showing it to friends, family, or coworkers.
+
+## Project files
+
+- `index.html` — safety notice, program gallery, dashboard, and reveal dialog.
+- `style.css` — responsive styling for the gallery and simulated experiences.
+- `script.js` — browser-only interactions and bounded visual animations.

@@ -1,62 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>System Protection</title>
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="description" content="A clearly labeled, harmless fake security scan for jokes and demos." />
+    <title>ByteShield — Safe Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="desktop">
-      <div class="taskbar">
-        <div class="start">Start</div>
-        <div class="status">Security: Active</div>
-      </div>
+    <main class="shell">
+      <div class="safety-banner" role="note"><span class="safety-dot" aria-hidden="true"></span><strong>SIMULATION ONLY</strong><span>This demo is completely harmless. It does not scan or change your device.</span></div>
+      <header class="topbar">
+        <a class="brand" href="#main" aria-label="ByteShield home"><span class="brand-mark" aria-hidden="true">B</span><span>byte<span class="brand-light">shield</span></span></a>
+        <div class="top-meta"><span class="online-dot" aria-hidden="true"></span><span>DEMO ENVIRONMENT</span><span class="version">v1.0.0</span></div>
+      </header>
 
-      <div class="window">
-        <div class="window-bar">
-          <div class="dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <div class="title">System Scan</div>
-          <div class="controls">×</div>
+      <section class="hero" id="main">
+        <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR FRIENDLY NEIGHBORHOOD FAKE ANTIVIRUS</div><h1>A little peace<br />of <span class="accent">mind.</span></h1><p>A playful security dashboard for demos, jokes, and learning. Every number and finding on this page is made up.</p><button class="text-button" id="revealButton" type="button"><span aria-hidden="true">✳</span> Wait, is this real?</button></div>
+        <div class="status-card" aria-live="polite"><div class="status-card-top"><span class="status-icon" aria-hidden="true">✓</span><span class="status-label">DEVICE STATUS</span><span class="status-pill" id="devicePill">PROTECTED</span></div><div class="status-score"><span id="score">100</span><span class="score-unit">/100</span></div><div class="score-caption" id="scoreCaption">Looking good. (In this pretend universe.)</div><div class="score-track"><span id="scoreTrack"></span></div><div class="status-foot"><span>SIMULATED HEALTH SCORE</span><span>JUST FOR SHOW</span></div></div>
+      </section>
+
+      <section class="programs-section" aria-labelledby="programsTitle"><div class="section-head"><div><div class="eyebrow">01 / THE PRANK ARCADE</div><h2 id="programsTitle">Pick a pretend program</h2><p class="section-description">Six harmless, click-to-start visual gags. They stay inside this page and stop whenever you say so.</p></div><span class="fake-tag">6 SIMULATIONS</span></div>
+        <div class="program-grid">
+          <article class="program-card"><div class="program-icon icon-amber" aria-hidden="true">!</div><div class="program-category">FAKE ALERT</div><h3>Oops! Something silly</h3><p>A dramatic-looking warning about a very undramatic situation.</p><button class="program-launch" data-program="alert" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
+          <article class="program-card"><div class="program-icon icon-blue" aria-hidden="true">↻</div><div class="program-category">FAKE UPDATE</div><h3>Definitely not updating</h3><p>A tiny progress animation that never touches the computer.</p><button class="program-launch" data-program="update" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
+          <article class="program-card"><div class="program-icon icon-purple" aria-hidden="true">&gt;_</div><div class="program-category">PRETEND TERMINAL</div><h3>Hollywood hacker</h3><p>Prewritten technobabble, zero commands, zero system access.</p><button class="program-launch" data-program="terminal" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
+          <article class="program-card"><div class="program-icon icon-pink" aria-hidden="true">✳</div><div class="program-category">GOOFY POP-UPS</div><h3>Compliment storm</h3><p>Compliments appear in this page only. No actual pop-up windows.</p><button class="program-launch" data-program="compliments" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
+          <article class="program-card"><div class="program-icon icon-green" aria-hidden="true">▦</div><div class="program-category">FAKE ENCRYPTION</div><h3>Very pretend files</h3><p>A joke progress meter for imaginary files—nothing is locked.</p><button class="program-launch" data-program="encrypt" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
+          <article class="program-card"><div class="program-icon icon-orange" aria-hidden="true">☕</div><div class="program-category">FAKE SYSTEM NOTICE</div><h3>Coffee.exe needs coffee</h3><p>A small, friendly reminder from a fictional computer.</p><button class="program-launch" data-program="coffee" type="button">Try this gag <span aria-hidden="true">↗</span></button></article>
         </div>
+      </section>
+      <section class="simulation-panel" id="simulationPanel" hidden aria-live="polite"><div class="simulation-top"><div><div class="eyebrow">PRETEND PROGRAM RUNNING · THIS PAGE ONLY</div><h2 id="simulationTitle">A harmless simulation</h2></div><button class="button button-quiet" id="stopSimulation" type="button">Stop &amp; reveal</button></div><div class="simulation-stage" id="simulationStage"></div><p class="simulation-footnote">This is a visual joke—not a real virus. It does not open new windows, lock your screen, read files, or make changes.</p></section>
 
-        <div class="window-body">
-          <div class="header-row">
-            <div class="logo">⚠</div>
-            <div>
-              <h1>Threat Detected</h1>
-              <p>Suspicious activity detected on this device.</p>
-            </div>
-          </div>
+      <section class="scan-panel" aria-labelledby="scanTitle"><div class="section-head"><div><div class="eyebrow">02 / THE MAIN EVENT</div><h2 id="scanTitle">Quick scan <span class="muted">(not really)</span></h2></div><div class="scan-type"><span class="scan-type-dot"></span> LOCAL DEMO</div></div>
+        <div class="scan-content"><div class="scan-gauge" id="gauge" role="img" aria-label="Scan progress: 0 percent"><div class="gauge-inner"><span id="percent">0</span><small>%</small><span class="gauge-caption">COMPLETE</span></div></div>
+          <div class="scan-details"><div class="scan-message" id="scanMessage" aria-live="polite">Ready when you are.</div><div class="scan-submessage" id="scanSubmessage">No files are being read. This is just a little animation.</div><div class="progress-track" role="progressbar" aria-label="Simulated scan progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progressFill"></span></div><div class="scan-stats"><span><i aria-hidden="true">◷</i> <span id="elapsed">00:00</span> elapsed</span><span><i aria-hidden="true">▤</i> <span id="checked">0</span> pretend items checked</span></div><div class="scan-actions"><button class="button button-primary" id="scanButton" type="button"><span aria-hidden="true">▶</span> Start a pretend scan</button><button class="button button-quiet" id="resetButton" type="button">Reset demo</button></div></div></div>
+      </section>
 
-          <div class="progress-box">
-            <label>Scanning system files...</label>
-            <div class="progress-bar">
-              <div id="progressFill" class="progress-fill"></div>
-            </div>
-            <div id="scanStatus" class="status-text">Initializing...</div>
-          </div>
-
-          <div class="threat-list">
-            <div class="threat-item"><span>Malware signature</span><strong>4/4</strong></div>
-            <div class="threat-item"><span>Browser hijack</span><strong>1/1</strong></div>
-            <div class="threat-item"><span>Registry corruption</span><strong>2/2</strong></div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="actions">
-            <button class="btn danger" id="removeButton">Quarantine</button>
-            <button class="btn secondary" id="dismissButton">Dismiss</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      <div class="lower-grid"><section class="findings-panel" aria-labelledby="findingsTitle"><div class="section-head compact"><div><div class="eyebrow">02 / DEFINITELY MADE UP</div><h2 id="findingsTitle">Demo findings <span class="finding-count" id="findingCount">0</span></h2></div><span class="fake-tag">FICTION</span></div><div id="findingsList" class="findings-list"><div class="empty-state"><span aria-hidden="true">✳</span><p>Your totally fictional results will show up here.</p></div></div><button class="button button-outline" id="resolveButton" type="button" disabled>Resolve pretend findings</button></section>
+        <section class="activity-panel" aria-labelledby="activityTitle"><div class="section-head compact"><div><div class="eyebrow">03 / LIVE PLAY-BY-PLAY</div><h2 id="activityTitle">Activity log</h2></div><button id="clearLogButton" class="icon-button" type="button" aria-label="Clear activity log" title="Clear log">↺</button></div><ol class="activity-list" id="activityList" aria-live="polite"><li class="activity-entry"><span class="activity-dot"></span><span><strong>Demo initialized</strong><small>Nothing is happening behind the scenes.</small></span><time>NOW</time></li></ol><p class="log-note">This log stays in your browser tab and is never sent anywhere.</p></section></div>
+      <footer><span>BYTE<span class="brand-light">SHIELD</span> <span class="footer-sep">/</span> A HARMLESS PRANK PROJECT</span><button class="footer-link" id="footerReveal" type="button">Show the joke</button></footer>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+    <dialog id="revealDialog" aria-labelledby="dialogTitle"><div class="dialog-mark" aria-hidden="true">✳</div><div class="eyebrow">THE BIG REVEAL</div><h2 id="dialogTitle">You’re totally safe.</h2><p>This was a harmless visual demo. It did not scan your device, access your files, or change any settings. There’s no malware here—just a bit of theater.</p><button class="button button-primary" id="closeDialog" type="button">Got it</button></dialog>
     <script src="script.js"></script>
   </body>
 </html>
