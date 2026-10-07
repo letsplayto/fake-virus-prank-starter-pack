@@ -180,7 +180,7 @@ label {
   font-size: 0.95rem;
 }
 
-.divide, .divider {
+.divider {
   border-top: 1px solid rgba(0,0,0,0.12);
   margin: 14px 0;
 }

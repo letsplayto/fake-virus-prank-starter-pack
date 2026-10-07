@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>System Protection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="taskbar">
+        <div class="start">Start</div>
+        <div class="status">Security: Active</div>
+      </div>
+
+      <div class="window">
+        <div class="window-bar">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="title">System Scan</div>
+          <div class="controls">×</div>
+        </div>
+
+        <div class="window-body">
+          <div class="header-row">
+            <div class="logo">⚠</div>
+            <div>
+              <h1>Threat Detected</h1>
+              <p>Suspicious activity detected on this device.</p>
+            </div>
+          </div>
+
+          <div class="progress-box">
+            <label>Scanning system files...</label>
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="scanStatus" class="status-text">Initializing...</div>
+          </div>
+
+          <div class="threat-list">
+            <div class="threat-item"><span>Malware signature</span><strong>4/4</strong></div>
+            <div class="threat-item"><span>Browser hijack</span><strong>1/1</strong></div>
+            <div class="threat-item"><span>Registry corruption</span><strong>2/2</strong></div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="actions">
+            <button class="btn danger" id="removeButton">Quarantine</button>
+            <button class="btn secondary" id="dismissButton">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
